@@ -1,0 +1,32 @@
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "resources" : [
+    {
+      "filename" : "cone.arreferenceimage"
+    },
+    {
+      "filename" : "cube.arreferenceimage"
+    },
+    {
+      "filename" : "cuboid.arreferenceimage"
+    },
+    {
+      "filename" : "cylinder.arreferenceimage"
+    },
+    {
+      "filename" : "sphere.arreferenceimage"
+    },
+    {
+      "filename" : "square-pyramid.arreferenceimage"
+    },
+    {
+      "filename" : "triangular-prism.arreferenceimage"
+    },
+    {
+      "filename" : "triangular-pyramid.arreferenceimage"
+    }
+  ]
+}

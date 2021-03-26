@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		067E923A260CDC40004C0775 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067E9239260CDC40004C0775 /* HomeViewController.swift */; };
+		06D73219260D04960018CE75 /* Gilroy-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 06D73218260D048C0018CE75 /* Gilroy-Light.otf */; };
+		06D7321B260D04980018CE75 /* Gilroy-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 06D73217260D048C0018CE75 /* Gilroy-ExtraBold.otf */; };
 		06FF5D8A26026D3A0045D282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FF5D8926026D3A0045D282 /* AppDelegate.swift */; };
 		06FF5D8C26026D3A0045D282 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 06FF5D8B26026D3A0045D282 /* art.scnassets */; };
 		06FF5D8E26026D3A0045D282 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FF5D8D26026D3A0045D282 /* ViewController.swift */; };
@@ -16,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		067E9239260CDC40004C0775 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		06D73211260D047E0018CE75 /* Gilroy-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gilroy-ExtraBold.otf"; path = "../../../../Downloads/Gilroy-FREE/Gilroy-ExtraBold.otf"; sourceTree = "<group>"; };
+		06D73212260D047E0018CE75 /* Gilroy-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gilroy-Light.otf"; path = "../../../../Downloads/Gilroy-FREE/Gilroy-Light.otf"; sourceTree = "<group>"; };
+		06D73217260D048C0018CE75 /* Gilroy-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-ExtraBold.otf"; sourceTree = "<group>"; };
+		06D73218260D048C0018CE75 /* Gilroy-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Light.otf"; sourceTree = "<group>"; };
 		06FF5D8626026D3A0045D282 /* GeometryAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeometryAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06FF5D8926026D3A0045D282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06FF5D8B26026D3A0045D282 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -37,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06D73216260D04860018CE75 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				06D73217260D048C0018CE75 /* Gilroy-ExtraBold.otf */,
+				06D73218260D048C0018CE75 /* Gilroy-Light.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		06FF5D7D26026D390045D282 = {
 			isa = PBXGroup;
 			children = (
@@ -59,7 +76,11 @@
 				06FF5D8926026D3A0045D282 /* AppDelegate.swift */,
 				06FF5D8B26026D3A0045D282 /* art.scnassets */,
 				06FF5D8D26026D3A0045D282 /* ViewController.swift */,
+				067E9239260CDC40004C0775 /* HomeViewController.swift */,
 				06FF5D8F26026D3A0045D282 /* Main.storyboard */,
+				06D73211260D047E0018CE75 /* Gilroy-ExtraBold.otf */,
+				06D73212260D047E0018CE75 /* Gilroy-Light.otf */,
+				06D73216260D04860018CE75 /* fonts */,
 				06FF5D9226026D3B0045D282 /* Assets.xcassets */,
 				06FF5D9426026D3B0045D282 /* LaunchScreen.storyboard */,
 				06FF5D9726026D3B0045D282 /* Info.plist */,
@@ -125,7 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				06FF5D8C26026D3A0045D282 /* art.scnassets in Resources */,
+				06D73219260D04960018CE75 /* Gilroy-Light.otf in Resources */,
 				06FF5D9626026D3B0045D282 /* LaunchScreen.storyboard in Resources */,
+				06D7321B260D04980018CE75 /* Gilroy-ExtraBold.otf in Resources */,
 				06FF5D9326026D3B0045D282 /* Assets.xcassets in Resources */,
 				06FF5D9126026D3A0045D282 /* Main.storyboard in Resources */,
 			);
@@ -140,6 +163,7 @@
 			files = (
 				06FF5D8E26026D3A0045D282 /* ViewController.swift in Sources */,
 				06FF5D8A26026D3A0045D282 /* AppDelegate.swift in Sources */,
+				067E923A260CDC40004C0775 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +320,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.luthfi.GeometryAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +339,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.luthfi.GeometryAR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

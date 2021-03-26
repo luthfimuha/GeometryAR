@@ -1,37 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bx9-Id-e24">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-ExtraBold.otf">
+            <string>Gilroy-ExtraBold</string>
+        </array>
+    </customFonts>
     <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="t4A-Zd-MW4">
+            <objects>
+                <viewController id="bx9-Id-e24" customClass="HomeViewController" customModule="GeometryAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AuQ-Gg-87w">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="kKC-ul-dTP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home-icon" translatesAutoresizingMaskIntoConstraints="NO" id="GTA-oH-86s">
+                                <rect key="frame" x="74.666666666666686" y="65" width="265" height="237"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="265" id="h6h-m0-UL7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GeometryAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXp-TV-4Pe">
+                                <rect key="frame" x="135.33333333333331" y="302" width="143.33333333333331" height="29.666666666666686"/>
+                                <fontDescription key="fontDescription" name="Gilroy-ExtraBold" family="Gilroy" pointSize="24"/>
+                                <color key="textColor" red="0.11764705882352941" green="0.15686274509803921" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dek-DD-97M">
+                                <rect key="frame" x="116.66666666666667" y="346.66666666666669" width="180.66666666666663" height="39.333333333333314"/>
+                                <string key="text">Learn 3D Geometry with
+Augmented Reality</string>
+                                <fontDescription key="fontDescription" name="Gilroy-ExtraBold" family="Gilroy" pointSize="16"/>
+                                <color key="textColor" red="0.5607843137254902" green="0.5725490196078431" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Qhd-43-oI3">
+                                <rect key="frame" x="102.66666666666669" y="431" width="209" height="224"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rkl-xj-0fm">
+                                        <rect key="frame" x="0.0" y="0.0" width="209" height="68"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Rkl-xj-0fm" secondAttribute="height" multiplier="209:68" id="Pre-Pi-jaR"/>
+                                            <constraint firstAttribute="height" constant="68" id="g7G-aI-7ph"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Gilroy-ExtraBold" family="Gilroy" pointSize="16"/>
+                                        <inset key="titleEdgeInsets" minX="25" minY="0.0" maxX="0.0" maxY="20"/>
+                                        <state key="normal" title="AR Camera" backgroundImage="btn-1">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="BV1-FR-VrT" kind="show" id="dcV-7R-wEL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5at-SP-DsQ">
+                                        <rect key="frame" x="0.0" y="78" width="209" height="68"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="68" id="FYJ-b7-6Sm"/>
+                                            <constraint firstAttribute="width" secondItem="5at-SP-DsQ" secondAttribute="height" multiplier="209:68" id="yn7-hs-1q3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Gilroy-ExtraBold" family="Gilroy" pointSize="16"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="20"/>
+                                        <state key="normal" title="Learn" backgroundImage="btn-2">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTy-eo-RHj">
+                                        <rect key="frame" x="0.0" y="156" width="209" height="68"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="gTy-eo-RHj" secondAttribute="height" multiplier="209:68" id="5wb-iR-jsV"/>
+                                            <constraint firstAttribute="height" constant="68" id="IdE-Q1-h1A"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Gilroy-ExtraBold" family="Gilroy" pointSize="16"/>
+                                        <inset key="titleEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="20"/>
+                                        <state key="normal" title="Quiz" backgroundImage="btn-3">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YxR-6I-4ug">
+                                <rect key="frame" x="334" y="649.66666666666663" width="60" height="66.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YxR-6I-4ug" secondAttribute="height" multiplier="48:53" id="02r-X3-LGN"/>
+                                    <constraint firstAttribute="width" constant="60" id="zSQ-MV-5GD"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="btn-4"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mpd-7G-HHH"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dek-DD-97M" firstAttribute="top" secondItem="sXp-TV-4Pe" secondAttribute="bottom" constant="15" id="AbI-af-Ifv"/>
+                            <constraint firstItem="Mpd-7G-HHH" firstAttribute="trailing" secondItem="YxR-6I-4ug" secondAttribute="trailing" constant="20" id="EOj-HD-QWD"/>
+                            <constraint firstItem="Qhd-43-oI3" firstAttribute="centerX" secondItem="AuQ-Gg-87w" secondAttribute="centerX" id="Gfq-mv-fHi"/>
+                            <constraint firstItem="Mpd-7G-HHH" firstAttribute="bottom" secondItem="kKC-ul-dTP" secondAttribute="bottom" id="Hag-Mz-1k5"/>
+                            <constraint firstItem="Qhd-43-oI3" firstAttribute="top" secondItem="dek-DD-97M" secondAttribute="bottom" constant="45" id="Kf9-s6-jEL"/>
+                            <constraint firstItem="sXp-TV-4Pe" firstAttribute="centerX" secondItem="AuQ-Gg-87w" secondAttribute="centerX" id="MTB-9q-LtC"/>
+                            <constraint firstItem="kKC-ul-dTP" firstAttribute="leading" secondItem="Mpd-7G-HHH" secondAttribute="leading" id="QbL-Pc-JnI"/>
+                            <constraint firstItem="GTA-oH-86s" firstAttribute="centerX" secondItem="AuQ-Gg-87w" secondAttribute="centerX" id="RPF-oo-frO"/>
+                            <constraint firstItem="Mpd-7G-HHH" firstAttribute="trailing" secondItem="kKC-ul-dTP" secondAttribute="trailing" id="Twk-5k-Vta"/>
+                            <constraint firstItem="sXp-TV-4Pe" firstAttribute="top" secondItem="GTA-oH-86s" secondAttribute="bottom" id="Vih-pA-21e"/>
+                            <constraint firstItem="Mpd-7G-HHH" firstAttribute="bottom" secondItem="GTA-oH-86s" secondAttribute="bottom" constant="434" id="Z5l-1B-bcP"/>
+                            <constraint firstItem="Mpd-7G-HHH" firstAttribute="bottom" secondItem="YxR-6I-4ug" secondAttribute="bottom" constant="20" id="oy2-S6-u4A"/>
+                            <constraint firstItem="kKC-ul-dTP" firstAttribute="top" secondItem="Mpd-7G-HHH" secondAttribute="top" id="pgn-lm-kbk"/>
+                            <constraint firstItem="GTA-oH-86s" firstAttribute="top" secondItem="Mpd-7G-HHH" secondAttribute="top" constant="65" id="u35-vP-SNn"/>
+                            <constraint firstItem="dek-DD-97M" firstAttribute="centerX" secondItem="AuQ-Gg-87w" secondAttribute="centerX" id="xtS-kn-ilo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gnp-Fg-Vp2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-888.40579710144937" y="89.673913043478265"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="GeometryAR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="U0K-SW-4ec">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BrB-h1-WRS">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                             </arscnView>
                         </subviews>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="GsS-dJ-CKf"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="bottom" secondItem="fQZ-KI-GVf" secondAttribute="bottom" id="VpT-BR-CcM"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="XyZ-9z-H8e"/>
-                            <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="U0K-SW-4ec" secondAttribute="top" id="rJc-2c-zQA"/>
+                            <constraint firstItem="BrB-h1-WRS" firstAttribute="top" secondItem="fQZ-KI-GVf" secondAttribute="top" id="gV7-yT-UAe"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
                     </view>
+                    <navigationItem key="navigationItem" id="gWN-dN-z9f"/>
                     <connections>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="86" y="80"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="414" height="736"/>
+        <image name="btn-1" width="209" height="68"/>
+        <image name="btn-2" width="209" height="68"/>
+        <image name="btn-3" width="209" height="68"/>
+        <image name="btn-4" width="162" height="177"/>
+        <image name="home-icon" width="1425" height="985"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

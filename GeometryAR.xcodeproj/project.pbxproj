@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		06520415260D8C9E00825577 /* LearnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06520414260D8C9E00825577 /* LearnViewController.swift */; };
+		06520418260D8CAA00825577 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06520417260D8CAA00825577 /* QuizViewController.swift */; };
 		067E923A260CDC40004C0775 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067E9239260CDC40004C0775 /* HomeViewController.swift */; };
 		06D73219260D04960018CE75 /* Gilroy-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 06D73218260D048C0018CE75 /* Gilroy-Light.otf */; };
 		06D7321B260D04980018CE75 /* Gilroy-ExtraBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 06D73217260D048C0018CE75 /* Gilroy-ExtraBold.otf */; };
@@ -19,9 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06520414260D8C9E00825577 /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
+		06520417260D8CAA00825577 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		067E9239260CDC40004C0775 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		06D73211260D047E0018CE75 /* Gilroy-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gilroy-ExtraBold.otf"; path = "../../../../Downloads/Gilroy-FREE/Gilroy-ExtraBold.otf"; sourceTree = "<group>"; };
-		06D73212260D047E0018CE75 /* Gilroy-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gilroy-Light.otf"; path = "../../../../Downloads/Gilroy-FREE/Gilroy-Light.otf"; sourceTree = "<group>"; };
 		06D73217260D048C0018CE75 /* Gilroy-ExtraBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-ExtraBold.otf"; sourceTree = "<group>"; };
 		06D73218260D048C0018CE75 /* Gilroy-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Light.otf"; sourceTree = "<group>"; };
 		06FF5D8626026D3A0045D282 /* GeometryAR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeometryAR.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,13 +75,13 @@
 		06FF5D8826026D3A0045D282 /* GeometryAR */ = {
 			isa = PBXGroup;
 			children = (
-				06FF5D8926026D3A0045D282 /* AppDelegate.swift */,
-				06FF5D8B26026D3A0045D282 /* art.scnassets */,
 				06FF5D8D26026D3A0045D282 /* ViewController.swift */,
 				067E9239260CDC40004C0775 /* HomeViewController.swift */,
+				06520414260D8C9E00825577 /* LearnViewController.swift */,
+				06520417260D8CAA00825577 /* QuizViewController.swift */,
 				06FF5D8F26026D3A0045D282 /* Main.storyboard */,
-				06D73211260D047E0018CE75 /* Gilroy-ExtraBold.otf */,
-				06D73212260D047E0018CE75 /* Gilroy-Light.otf */,
+				06FF5D8926026D3A0045D282 /* AppDelegate.swift */,
+				06FF5D8B26026D3A0045D282 /* art.scnassets */,
 				06D73216260D04860018CE75 /* fonts */,
 				06FF5D9226026D3B0045D282 /* Assets.xcassets */,
 				06FF5D9426026D3B0045D282 /* LaunchScreen.storyboard */,
@@ -162,6 +164,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				06FF5D8E26026D3A0045D282 /* ViewController.swift in Sources */,
+				06520418260D8CAA00825577 /* QuizViewController.swift in Sources */,
+				06520415260D8C9E00825577 /* LearnViewController.swift in Sources */,
 				06FF5D8A26026D3A0045D282 /* AppDelegate.swift in Sources */,
 				067E923A260CDC40004C0775 /* HomeViewController.swift in Sources */,
 			);

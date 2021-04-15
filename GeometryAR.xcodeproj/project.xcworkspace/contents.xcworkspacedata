@@ -2,15 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../GeometryAR/OverlayView.swift">
-   </FileRef>
-   <FileRef
-      location = "group:../GeometryAR/OverlayView.xib">
-   </FileRef>
-   <FileRef
-      location = "group:/Users/luthfi/Documents/Xcode Project/GeometryAR/GeometryAR/PresentationController.swift">
-   </FileRef>
-   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>

@@ -27,7 +27,7 @@ class HelpViewController: UIViewController {
     
     @IBAction func getMarkerButton(_ sender: Any) {
         
-        guard let url = URL(string: "https://masboris.me/marker.pdf") else {return}
+        guard let url = URL(string: "https://luthfi.dev/wp-content/uploads/2021/05/marker.pdf") else {return}
         UIApplication.shared.open(url)
         
     }

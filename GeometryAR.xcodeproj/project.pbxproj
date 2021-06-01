@@ -69,8 +69,8 @@
 			isa = PBXGroup;
 			children = (
 				06FF5D8D26026D3A0045D282 /* ARViewController.swift */,
-				067E9239260CDC40004C0775 /* HomeViewController.swift */,
 				06520414260D8C9E00825577 /* MaterialViewController.swift */,
+				067E9239260CDC40004C0775 /* HomeViewController.swift */,
 				06520417260D8CAA00825577 /* QuizViewController.swift */,
 				06AE5AD2260F310500D85CED /* LearnViewController.swift */,
 				06B081F226283D9F00505FD6 /* ResultViewController.swift */,
@@ -369,7 +369,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5TG98Z4BLJ;
 				INFOPLIST_FILE = GeometryAR/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -389,7 +389,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5TG98Z4BLJ;
 				INFOPLIST_FILE = GeometryAR/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

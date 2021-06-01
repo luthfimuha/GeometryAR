@@ -41,8 +41,6 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         self.sceneView.autoenablesDefaultLighting = true
         
         
-        print("did load")
-        
         DispatchQueue.main.async {
             
             self.loadScene()
@@ -173,11 +171,8 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
             
         }
         
-        
         return node
-        
     }
-    
     
     
     func loadScene() {
@@ -193,7 +188,6 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         
         print("All scene loaded")
     }
-    
     
     
     

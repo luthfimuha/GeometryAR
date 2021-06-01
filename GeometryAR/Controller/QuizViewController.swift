@@ -79,8 +79,6 @@ class QuizViewController: UIViewController {
                 questionImageView.image = UIImage(named: imageString)
             }
 
-           
-            
             questionLabel.text = quizManager.getQuestionText()
             
             let answerChoices = quizManager.getAnswers()

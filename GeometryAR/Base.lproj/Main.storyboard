@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8s9-w2-hGi">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -112,7 +113,7 @@ Augmented Reality</string>
                             <constraint firstItem="dek-DD-97M" firstAttribute="top" secondItem="sXp-TV-4Pe" secondAttribute="bottom" constant="15" id="AbI-af-Ifv"/>
                             <constraint firstItem="Mpd-7G-HHH" firstAttribute="trailing" secondItem="YxR-6I-4ug" secondAttribute="trailing" constant="20" id="EOj-HD-QWD"/>
                             <constraint firstItem="Qhd-43-oI3" firstAttribute="centerX" secondItem="AuQ-Gg-87w" secondAttribute="centerX" id="Gfq-mv-fHi"/>
-                            <constraint firstItem="Mpd-7G-HHH" firstAttribute="bottom" secondItem="kKC-ul-dTP" secondAttribute="bottom" id="Hag-Mz-1k5"/>
+                            <constraint firstAttribute="bottom" secondItem="kKC-ul-dTP" secondAttribute="bottom" id="Hag-Mz-1k5"/>
                             <constraint firstItem="Qhd-43-oI3" firstAttribute="top" secondItem="dek-DD-97M" secondAttribute="bottom" constant="45" id="Kf9-s6-jEL"/>
                             <constraint firstItem="sXp-TV-4Pe" firstAttribute="centerX" secondItem="AuQ-Gg-87w" secondAttribute="centerX" id="MTB-9q-LtC"/>
                             <constraint firstItem="kKC-ul-dTP" firstAttribute="leading" secondItem="Mpd-7G-HHH" secondAttribute="leading" id="QbL-Pc-JnI"/>
@@ -121,7 +122,7 @@ Augmented Reality</string>
                             <constraint firstItem="sXp-TV-4Pe" firstAttribute="top" secondItem="GTA-oH-86s" secondAttribute="bottom" id="Vih-pA-21e"/>
                             <constraint firstItem="Mpd-7G-HHH" firstAttribute="bottom" secondItem="GTA-oH-86s" secondAttribute="bottom" constant="434" id="Z5l-1B-bcP"/>
                             <constraint firstItem="Mpd-7G-HHH" firstAttribute="bottom" secondItem="YxR-6I-4ug" secondAttribute="bottom" constant="20" id="oy2-S6-u4A"/>
-                            <constraint firstItem="kKC-ul-dTP" firstAttribute="top" secondItem="Mpd-7G-HHH" secondAttribute="top" id="pgn-lm-kbk"/>
+                            <constraint firstItem="kKC-ul-dTP" firstAttribute="top" secondItem="AuQ-Gg-87w" secondAttribute="top" id="pgn-lm-kbk"/>
                             <constraint firstItem="GTA-oH-86s" firstAttribute="top" secondItem="Mpd-7G-HHH" secondAttribute="top" constant="65" id="u35-vP-SNn"/>
                             <constraint firstItem="dek-DD-97M" firstAttribute="centerX" secondItem="AuQ-Gg-87w" secondAttribute="centerX" id="xtS-kn-ilo"/>
                         </constraints>
@@ -130,7 +131,7 @@ Augmented Reality</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gnp-Fg-Vp2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-520" y="288"/>
+            <point key="canvasLocation" x="-520" y="287.91469194312793"/>
         </scene>
         <!--Learn View Controller Scene-->
         <scene sceneID="9bq-vC-lmL">
@@ -286,9 +287,8 @@ Augmented Reality</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="cFP-OS-zAj">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="cFP-OS-zAj">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMM-2i-rYA">
                                 <rect key="frame" x="20" y="10" width="50" height="50"/>
@@ -391,7 +391,7 @@ Augmented Reality</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a Shape" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gay-Ma-7hX">
-                                <rect key="frame" x="130.66666666666669" y="15.000000000000002" width="152.66666666666669" height="24.666666666666671"/>
+                                <rect key="frame" x="130.66666666666669" y="15" width="152.66666666666669" height="24.666666666666671"/>
                                 <fontDescription key="fontDescription" name="Gilroy-ExtraBold" family="Gilroy" pointSize="20"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -410,6 +410,7 @@ Augmented Reality</string>
                             <constraint firstItem="u9a-pg-nan" firstAttribute="top" secondItem="PSA-fD-CIN" secondAttribute="top" constant="215" id="JTl-9K-QpF"/>
                             <constraint firstItem="IMM-2i-rYA" firstAttribute="leading" secondItem="LZl-3x-RV0" secondAttribute="leadingMargin" id="L4o-mx-sI6"/>
                             <constraint firstItem="PSA-fD-CIN" firstAttribute="trailing" secondItem="1YF-tm-2eg" secondAttribute="trailing" constant="40" id="Laf-9x-kcs"/>
+                            <constraint firstItem="cFP-OS-zAj" firstAttribute="top" secondItem="LZl-3x-RV0" secondAttribute="top" id="NZQ-F8-5OJ"/>
                             <constraint firstItem="PSA-fD-CIN" firstAttribute="trailing" secondItem="avF-N6-NAG" secondAttribute="trailing" constant="40" id="NkH-o6-Avx"/>
                             <constraint firstItem="avF-N6-NAG" firstAttribute="top" secondItem="LZl-3x-RV0" secondAttribute="topMargin" constant="55" id="VgG-aS-CTS"/>
                             <constraint firstItem="1YF-tm-2eg" firstAttribute="top" secondItem="PSA-fD-CIN" secondAttribute="top" constant="525" id="b2m-lN-KQs"/>
@@ -417,9 +418,12 @@ Augmented Reality</string>
                             <constraint firstItem="8kG-d4-A18" firstAttribute="leading" secondItem="PSA-fD-CIN" secondAttribute="leading" constant="40" id="d7h-Yl-NBE"/>
                             <constraint firstItem="IMM-2i-rYA" firstAttribute="top" secondItem="PSA-fD-CIN" secondAttribute="top" constant="10" id="e4a-Ar-Vnv"/>
                             <constraint firstItem="ATB-oG-LnG" firstAttribute="top" secondItem="PSA-fD-CIN" secondAttribute="top" constant="215" id="gLu-dX-0eD"/>
+                            <constraint firstItem="cFP-OS-zAj" firstAttribute="leading" secondItem="PSA-fD-CIN" secondAttribute="leading" id="kbd-RK-3nD"/>
                             <constraint firstItem="izU-zj-RGj" firstAttribute="top" secondItem="PSA-fD-CIN" secondAttribute="top" constant="370" id="nsR-Im-qV5"/>
+                            <constraint firstAttribute="bottom" secondItem="cFP-OS-zAj" secondAttribute="bottom" id="rSM-JB-JIM"/>
                             <constraint firstItem="gay-Ma-7hX" firstAttribute="top" secondItem="PSA-fD-CIN" secondAttribute="top" constant="15" id="tLV-1q-0bp"/>
                             <constraint firstItem="PSA-fD-CIN" firstAttribute="trailing" secondItem="ATB-oG-LnG" secondAttribute="trailing" constant="40" id="uHh-sT-NHN"/>
+                            <constraint firstItem="cFP-OS-zAj" firstAttribute="trailing" secondItem="PSA-fD-CIN" secondAttribute="trailing" id="zHx-mC-KVm"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ouZ-5u-YP7"/>
@@ -429,7 +433,7 @@ Augmented Reality</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KG7-58-dP3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="295.6521739130435" y="287.77173913043481"/>
+            <point key="canvasLocation" x="295.38461538461536" y="287.2037914691943"/>
         </scene>
         <!--Help View Controller-->
         <scene sceneID="xy8-fI-TyN">
@@ -554,9 +558,8 @@ Augmented Reality</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="o1m-CJ-P24">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="H4W-64-Xr8">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2FC-4t-fVl" userLabel="Top Bar">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
@@ -600,7 +603,7 @@ Augmented Reality</string>
                                 <rect key="frame" x="30" y="108" width="354" height="318"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="3HA-Vd-Gkr">
-                                        <rect key="frame" x="0.0" y="0.0" width="354" height="180"/>
+                                        <rect key="frame" x="12" y="0.0" width="330" height="180"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="180" id="U2C-sA-O76"/>
@@ -675,8 +678,10 @@ Text</string>
                         <constraints>
                             <constraint firstItem="wmh-U3-4HE" firstAttribute="top" secondItem="2FC-4t-fVl" secondAttribute="bottom" constant="10" id="6yh-r1-nyA"/>
                             <constraint firstItem="2FC-4t-fVl" firstAttribute="trailing" secondItem="QNi-AK-HQm" secondAttribute="trailing" id="AMQ-Ym-9qd"/>
+                            <constraint firstItem="H4W-64-Xr8" firstAttribute="leading" secondItem="trR-ZF-tiC" secondAttribute="leading" id="GR9-hv-sBr"/>
                             <constraint firstItem="2FC-4t-fVl" firstAttribute="top" secondItem="QNi-AK-HQm" secondAttribute="top" id="IjM-wN-7MH"/>
                             <constraint firstItem="GXC-cM-SXi" firstAttribute="top" secondItem="qNK-jq-HXq" secondAttribute="bottom" constant="20" id="KH2-Nd-4hr"/>
+                            <constraint firstAttribute="bottom" secondItem="H4W-64-Xr8" secondAttribute="bottom" id="Kol-Gv-eZ8"/>
                             <constraint firstItem="QNi-AK-HQm" firstAttribute="bottom" secondItem="igN-pr-Yty" secondAttribute="bottom" constant="30" id="M8X-4Y-2zo"/>
                             <constraint firstItem="qNK-jq-HXq" firstAttribute="top" secondItem="wmh-U3-4HE" secondAttribute="bottom" constant="30" id="Oyd-KV-zIe"/>
                             <constraint firstItem="igN-pr-Yty" firstAttribute="top" secondItem="GXC-cM-SXi" secondAttribute="bottom" constant="10" id="PKf-oH-wCa"/>
@@ -685,9 +690,11 @@ Text</string>
                             <constraint firstItem="igN-pr-Yty" firstAttribute="leading" secondItem="QNi-AK-HQm" secondAttribute="leading" constant="40" id="cSk-5A-teE"/>
                             <constraint firstAttribute="trailing" secondItem="igN-pr-Yty" secondAttribute="trailing" constant="40" id="dmg-yG-cLT"/>
                             <constraint firstItem="2FC-4t-fVl" firstAttribute="leading" secondItem="QNi-AK-HQm" secondAttribute="leading" id="ePF-4x-4wN"/>
+                            <constraint firstItem="H4W-64-Xr8" firstAttribute="top" secondItem="trR-ZF-tiC" secondAttribute="top" id="gtN-AC-fxz"/>
                             <constraint firstItem="qNK-jq-HXq" firstAttribute="leading" secondItem="QNi-AK-HQm" secondAttribute="leading" constant="30" id="ifO-Ks-HyI"/>
                             <constraint firstItem="wmh-U3-4HE" firstAttribute="leading" secondItem="QNi-AK-HQm" secondAttribute="leading" constant="50" id="l96-cJ-qaz"/>
                             <constraint firstItem="QNi-AK-HQm" firstAttribute="trailing" secondItem="qNK-jq-HXq" secondAttribute="trailing" constant="30" id="nZY-Ts-58N"/>
+                            <constraint firstAttribute="trailing" secondItem="H4W-64-Xr8" secondAttribute="trailing" id="njJ-Oa-wSi"/>
                             <constraint firstItem="QNi-AK-HQm" firstAttribute="trailing" secondItem="wmh-U3-4HE" secondAttribute="trailing" constant="50" id="sim-Bp-ijC"/>
                             <constraint firstItem="GXC-cM-SXi" firstAttribute="leading" secondItem="QNi-AK-HQm" secondAttribute="leading" constant="40" id="vtm-rh-Des"/>
                         </constraints>
@@ -706,7 +713,7 @@ Text</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ebs-pW-wXh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="295.6521739130435" y="1070.3804347826087"/>
+            <point key="canvasLocation" x="295.38461538461536" y="1069.9052132701422"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="0JH-sj-Iqe">
@@ -716,36 +723,29 @@ Text</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="qwc-IW-qFB">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="qwc-IW-qFB">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7SK-KG-bFt">
-                                <rect key="frame" x="40" y="70" width="334" height="37"/>
-                                <fontDescription key="fontDescription" name="Gilroy-ExtraBold" family="Gilroy" pointSize="30"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have finished all the questions." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j80-70-SQu">
-                                <rect key="frame" x="40" y="126.99999999999999" width="334" height="61.333333333333329"/>
-                                <fontDescription key="fontDescription" name="Gilroy-ExtraBold" family="Gilroy" pointSize="25"/>
+                                <rect key="frame" x="40" y="156.33333333333334" width="334" height="34.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Gilroy-ExtraBold" family="Gilroy" pointSize="28"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your score : " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2f-3d-s63">
-                                <rect key="frame" x="40" y="228.33333333333334" width="334" height="30.666666666666657"/>
+                                <rect key="frame" x="40" y="225.66666666666666" width="334" height="30.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Gilroy-ExtraBold" family="Gilroy" pointSize="25"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XX%" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wS7-Sh-zT4">
-                                <rect key="frame" x="40" y="274" width="334" height="98"/>
+                                <rect key="frame" x="40" y="271.33333333333331" width="334" height="98"/>
                                 <fontDescription key="fontDescription" name="Gilroy-ExtraBold" family="Gilroy" pointSize="80"/>
                                 <color key="textColor" systemColor="systemGreenColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVX-Ne-EoE">
-                                <rect key="frame" x="75" y="474.33333333333326" width="264" height="86"/>
+                                <rect key="frame" x="75" y="471.66666666666674" width="264" height="86"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="86" id="4Lo-b9-4Ow"/>
                                 </constraints>
@@ -759,7 +759,7 @@ Text</string>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37S-EB-7Gl">
-                                <rect key="frame" x="75" y="570.33333333333337" width="264" height="86"/>
+                                <rect key="frame" x="75" y="567.66666666666663" width="264" height="86"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="86" id="Mbj-cf-0uj"/>
                                 </constraints>
@@ -773,35 +773,45 @@ Text</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You got xx of xx questions right." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nnf-dH-Kyf">
-                                <rect key="frame" x="40" y="382" width="334" height="22.333333333333314"/>
+                                <rect key="frame" x="40" y="379.33333333333331" width="334" height="22.333333333333314"/>
                                 <fontDescription key="fontDescription" name="Gilroy-ExtraBold" family="Gilroy" pointSize="18"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have finished all the questions." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j80-70-SQu">
+                                <rect key="frame" x="40" y="70" width="334" height="61.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Gilroy-ExtraBold" family="Gilroy" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="psf-qe-46y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="7SK-KG-bFt" firstAttribute="top" secondItem="j80-70-SQu" secondAttribute="bottom" constant="25" id="1YT-Hp-oPO"/>
                             <constraint firstItem="psf-qe-46y" firstAttribute="trailing" secondItem="Nnf-dH-Kyf" secondAttribute="trailing" constant="40" id="55a-PQ-hQr"/>
                             <constraint firstItem="psf-qe-46y" firstAttribute="trailing" secondItem="37S-EB-7Gl" secondAttribute="trailing" constant="75" id="7eK-Hf-4dw"/>
+                            <constraint firstItem="Q2f-3d-s63" firstAttribute="top" secondItem="7SK-KG-bFt" secondAttribute="bottom" constant="35" id="9Fx-Gd-PYs"/>
+                            <constraint firstItem="qwc-IW-qFB" firstAttribute="trailing" secondItem="psf-qe-46y" secondAttribute="trailing" id="Bbr-iD-yNb"/>
                             <constraint firstItem="psf-qe-46y" firstAttribute="trailing" secondItem="j80-70-SQu" secondAttribute="trailing" constant="40" id="Dsj-TS-Zdr"/>
-                            <constraint firstItem="7SK-KG-bFt" firstAttribute="top" secondItem="psf-qe-46y" secondAttribute="top" constant="70" id="EM0-tJ-Nlm"/>
                             <constraint firstItem="Nnf-dH-Kyf" firstAttribute="leading" secondItem="psf-qe-46y" secondAttribute="leading" constant="40" id="FLB-Gl-dj8"/>
+                            <constraint firstItem="j80-70-SQu" firstAttribute="top" secondItem="psf-qe-46y" secondAttribute="top" constant="70" id="KgQ-0l-ZdO"/>
                             <constraint firstItem="psf-qe-46y" firstAttribute="trailing" secondItem="wS7-Sh-zT4" secondAttribute="trailing" constant="40" id="N0s-qA-Kq7"/>
                             <constraint firstItem="37S-EB-7Gl" firstAttribute="top" secondItem="BVX-Ne-EoE" secondAttribute="bottom" constant="10" id="OUX-2r-HDr"/>
                             <constraint firstItem="wS7-Sh-zT4" firstAttribute="top" secondItem="Q2f-3d-s63" secondAttribute="bottom" constant="15" id="Sui-Rl-BG8"/>
                             <constraint firstItem="Nnf-dH-Kyf" firstAttribute="top" secondItem="wS7-Sh-zT4" secondAttribute="bottom" constant="10" id="U38-8V-kyE"/>
+                            <constraint firstAttribute="bottom" secondItem="qwc-IW-qFB" secondAttribute="bottom" id="VTE-64-f9s"/>
                             <constraint firstItem="37S-EB-7Gl" firstAttribute="leading" secondItem="psf-qe-46y" secondAttribute="leading" constant="75" id="b7V-WP-Rss"/>
                             <constraint firstItem="psf-qe-46y" firstAttribute="trailing" secondItem="Q2f-3d-s63" secondAttribute="trailing" constant="40" id="bZH-EG-Vpx"/>
                             <constraint firstItem="BVX-Ne-EoE" firstAttribute="leading" secondItem="psf-qe-46y" secondAttribute="leading" constant="75" id="cFH-Wx-hF8"/>
                             <constraint firstItem="psf-qe-46y" firstAttribute="trailing" secondItem="7SK-KG-bFt" secondAttribute="trailing" constant="40" id="dnR-5z-UpU"/>
                             <constraint firstItem="psf-qe-46y" firstAttribute="trailing" secondItem="BVX-Ne-EoE" secondAttribute="trailing" constant="75" id="gqe-nn-Vps"/>
                             <constraint firstItem="BVX-Ne-EoE" firstAttribute="top" secondItem="Nnf-dH-Kyf" secondAttribute="bottom" constant="70" id="kx6-th-6UY"/>
+                            <constraint firstItem="qwc-IW-qFB" firstAttribute="top" secondItem="uqB-j4-pHj" secondAttribute="top" id="q0G-jh-e9G"/>
+                            <constraint firstItem="qwc-IW-qFB" firstAttribute="leading" secondItem="psf-qe-46y" secondAttribute="leading" id="rJY-4d-zak"/>
                             <constraint firstItem="wS7-Sh-zT4" firstAttribute="leading" secondItem="psf-qe-46y" secondAttribute="leading" constant="40" id="s3T-sp-LPQ"/>
                             <constraint firstItem="j80-70-SQu" firstAttribute="leading" secondItem="psf-qe-46y" secondAttribute="leading" constant="40" id="t11-xW-0Ff"/>
                             <constraint firstItem="7SK-KG-bFt" firstAttribute="leading" secondItem="psf-qe-46y" secondAttribute="leading" constant="40" id="uhV-YS-2gJ"/>
-                            <constraint firstItem="Q2f-3d-s63" firstAttribute="top" secondItem="j80-70-SQu" secondAttribute="bottom" constant="40" id="unZ-dM-5Wy"/>
-                            <constraint firstItem="j80-70-SQu" firstAttribute="top" secondItem="7SK-KG-bFt" secondAttribute="bottom" constant="20" id="xv1-px-rqr"/>
                             <constraint firstItem="Q2f-3d-s63" firstAttribute="leading" secondItem="psf-qe-46y" secondAttribute="leading" constant="40" id="zyg-U6-YIT"/>
                         </constraints>
                     </view>
@@ -814,7 +824,7 @@ Text</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ntb-87-gfR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1166.6666666666667" y="1069.5652173913045"/>
+            <point key="canvasLocation" x="1166.1538461538462" y="1069.1943127962086"/>
         </scene>
         <!--AR View Controller-->
         <scene sceneID="tXr-a1-R10">

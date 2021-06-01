@@ -9,7 +9,6 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    @IBOutlet weak var cameraButton: UIButton!
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .darkContent

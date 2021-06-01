@@ -41,15 +41,7 @@ class ResultViewController: UIViewController {
     
     
     @IBAction func tryAgainPressed(_ sender: Any) {
-        
-//        if let controllers = self.navigationController?.viewControllers {
-//            for vc in controllers {
-//                if vc is QuizViewController {
-//                    self.navigationController?.popToViewController(vc as! QuizViewController, animated: true)
-//                }
-//            }
-//        }
-        
+
         navigationController?.popViewController(animated: true)
 
     }

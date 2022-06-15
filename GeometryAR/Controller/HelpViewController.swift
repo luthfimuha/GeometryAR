@@ -15,8 +15,6 @@ class HelpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
         // Do any additional setup after loading the view.
     }
     
@@ -29,7 +27,6 @@ class HelpViewController: UIViewController {
         
         guard let url = URL(string: "https://luthfi.dev/wp-content/uploads/2021/05/marker.pdf") else {return}
         UIApplication.shared.open(url)
-        
     }
     
     /*

@@ -10,8 +10,6 @@ import SceneKit
 
 class MaterialViewController: UIViewController{
     
-    
-    
     @IBOutlet weak var sceneView: SCNView!
     
     @IBOutlet weak var topBar: UIView!
@@ -36,7 +34,6 @@ class MaterialViewController: UIViewController{
         
         super.viewDidLoad()
         
-        
         //get Content
         
         pageTitle.text = selectedShape.capitalized
@@ -48,25 +45,19 @@ class MaterialViewController: UIViewController{
         saImageView.image = UIImage(named: material.surfaceArea, in: Bundle.main, with: nil)
         vImageView.image = UIImage(named: material.volume, in: Bundle.main, with: nil)
         
-        
         // setup 3D scene
-
+        
         sceneView.autoenablesDefaultLighting = true
         sceneView.cameraControlConfiguration.allowsTranslation = false
         sceneView.allowsCameraControl = true
         
-        
-       
-        
-        
         // Disable Camera Panning
-
+        
         for reco in sceneView.gestureRecognizers! {
             if let panReco = reco as? UIPanGestureRecognizer {
                 panReco.maximumNumberOfTouches = 1
             }
         }
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -95,7 +86,7 @@ class MaterialViewController: UIViewController{
             let intensity = lightNode.light?.intensity
             
             print("omni light added \(String(describing: intensity))")
-        
+            
             
             // 6: Creating and adding ambien light to scene
             let ambientLightNode = SCNNode()
@@ -109,14 +100,10 @@ class MaterialViewController: UIViewController{
             self.spinner.stopAnimating()
         }
     }
-
     
     @IBAction func backPressed(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
-    
-
-
 }
 
 

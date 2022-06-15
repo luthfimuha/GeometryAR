@@ -8,7 +8,7 @@
 import UIKit
 
 class QuizViewController: UIViewController {
-
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .darkContent
     }
@@ -25,12 +25,12 @@ class QuizViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         progressBar.layer.cornerRadius = 4
         progressBar.clipsToBounds = true
-
+        
         updateUI()
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -58,9 +58,6 @@ class QuizViewController: UIViewController {
         
         quizManager.nextQuestion()
         updateUI()
-        
-        
-        
     }
     
     
@@ -78,7 +75,7 @@ class QuizViewController: UIViewController {
                 questionImageView.isHidden = false
                 questionImageView.image = UIImage(named: imageString)
             }
-
+            
             questionLabel.text = quizManager.getQuestionText()
             
             let answerChoices = quizManager.getAnswers()
@@ -90,14 +87,12 @@ class QuizViewController: UIViewController {
             
             progressBar.setProgress(quizManager.getProgress(), animated: true)
             
-//            progressBar.progress = quizManager.getProgress()
+            //            progressBar.progress = quizManager.getProgress()
         }
         
         else {
             performSegue(withIdentifier: "quizToResult", sender: self)
         }
-    
-        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -128,17 +123,14 @@ class QuizViewController: UIViewController {
         }
     }
     
-    
-    
-    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

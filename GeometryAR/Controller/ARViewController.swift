@@ -27,8 +27,6 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         return true
     }
     
-    
-    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -48,10 +46,7 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
             self.backButton.isHidden = false
             self.loadingLabel.isHidden = true
         }
-        
-        
     }
-    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -67,14 +62,12 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         }
         print("will appear")
         // Run the view's session
-//        sceneView.allowsCameraControl = true
+        //        sceneView.allowsCameraControl = true
         sceneView.session.run(configuration)
     }
     
     @IBAction func backPressed(_ sender: Any) {
-        
         navigationController?.popViewController(animated: true)
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -88,11 +81,11 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
             lightNode.position = SCNVector3(x: 0.5, y: 0.3, z: -0.1)
             lightNode.light?.intensity = 1.7
             self.sceneView.scene.rootNode.addChildNode(lightNode)
-
+            
             let intensity = lightNode.light?.intensity
-
+            
             print("omni light added \(String(describing: intensity))")
-
+            
             let ambientLightNode = SCNNode()
             ambientLightNode.light = SCNLight()
             ambientLightNode.light?.type = .ambient
@@ -167,16 +160,11 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
             
             guard let shape = shapeNode else {return nil}
             node.addChildNode(shape)
-            
-            
         }
-        
         return node
     }
     
-    
     func loadScene() {
-        
         self.cubeNode = SCNScene(named: modelData["cube"]!.scene)?.rootNode
         self.cuboidNode = SCNScene(named: modelData["cuboid"]!.scene)?.rootNode
         self.pyramidNode = SCNScene(named: modelData["pyramid"]!.scene)?.rootNode
@@ -185,15 +173,5 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         self.sphereNode = SCNScene(named: modelData["sphere"]!.scene)?.rootNode
         self.tPyramidNode = SCNScene(named: modelData["tetrahedron"]!.scene)?.rootNode
         self.tPrismNode = SCNScene(named: modelData["tprism"]!.scene)?.rootNode
-        
-        print("All scene loaded")
     }
-    
-    
-    
-    // MARK: - ARSCNViewDelegate
-    
-    
-    
-    
 }

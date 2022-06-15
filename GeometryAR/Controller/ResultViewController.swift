@@ -13,7 +13,6 @@ class ResultViewController: UIViewController {
         return .darkContent
     }
     
-    
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var scoreDetailLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
@@ -35,30 +34,28 @@ class ResultViewController: UIViewController {
         
         scoreLabel.text = score
         scoreDetailLabel.text = scoreDetail
-
+        
         // Do any additional setup after loading the view.
     }
     
     
     @IBAction func tryAgainPressed(_ sender: Any) {
-
+        
         navigationController?.popViewController(animated: true)
-
+        
     }
-    
-
     @IBAction func backToHomePressed(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
         
     }
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

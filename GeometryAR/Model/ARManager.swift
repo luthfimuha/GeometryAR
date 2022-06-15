@@ -11,7 +11,6 @@ import ARKit
 struct ARManager {
     
     let modelData: [String:ARModel] = [
-    
         "cube" : ARModel(marker: "cube", scene: "art.scnassets/ar/box.scn"),
         "cuboid" : ARModel(marker: "cuboid", scene: "art.scnassets/ar/cuboid.scn"),
         "pyramid" : ARModel(marker: "square-pyramid", scene: "art.scnassets/ar/pyramid.scn"),
@@ -21,8 +20,4 @@ struct ARManager {
         "tetrahedron" : ARModel(marker: "triangular-pyramid", scene: "art.scnassets/ar/t_pyramid.scn"),
         "tprism" : ARModel(marker: "triangular-prism", scene: "art.scnassets/ar/t_prism.scn"),
     ]
-    
-    
-    
-    
 }

@@ -19,7 +19,7 @@ struct Question {
     //Look at the data in the quiz array, there is a seperate string that is the correctAnswer.
     let correctAnswer: String
     
-    //The initialiser needs to be updated to match the new multiple choice quiz data.
+    //The initializer needs to be updated to match the new multiple choice quiz data.
     init(q: String, a: [String], image: String, correctAnswer: String) {
         text = q
         answers = a

@@ -120,17 +120,25 @@
 		06FF5D8826026D3A0045D282 /* GeometryAR */ = {
 			isa = PBXGroup;
 			children = (
+				8DC49DD72859ABE000727B7A /* Assets */,
 				0627F19B26258899001641C2 /* Model */,
 				0627F19A26258848001641C2 /* Controller */,
 				06FF5D8F26026D3A0045D282 /* Main.storyboard */,
 				06FF5D8926026D3A0045D282 /* AppDelegate.swift */,
-				06FF5D8B26026D3A0045D282 /* art.scnassets */,
-				06D73216260D04860018CE75 /* fonts */,
-				06FF5D9226026D3B0045D282 /* Assets.xcassets */,
 				06FF5D9426026D3B0045D282 /* LaunchScreen.storyboard */,
 				06FF5D9726026D3B0045D282 /* Info.plist */,
 			);
 			path = GeometryAR;
+			sourceTree = "<group>";
+		};
+		8DC49DD72859ABE000727B7A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				06FF5D9226026D3B0045D282 /* Assets.xcassets */,
+				06FF5D8B26026D3A0045D282 /* art.scnassets */,
+				06D73216260D04860018CE75 /* fonts */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

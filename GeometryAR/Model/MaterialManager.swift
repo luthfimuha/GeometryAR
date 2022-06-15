@@ -24,15 +24,4 @@ struct MaterialManager {
     func getMaterial(for shape: String) -> Material {
         return material[shape]!
     }
-
-//    
-//    case cube = "art.scnassets/learn/box.scn"
-//    case cuboid = "art.scnassets/learn/cuboid.scn"
-//    case cone = "art.scnassets/learn/cone.scn"
-//    case cylinder = "art.scnassets/learn/cylinder.scn"
-//    case sphere = "art.scnassets/learn/sphere.scn"
-//    case pyramid = "art.scnassets/learn/pyramid.scn"
-//    case tPyramid = "art.scnassets/learn/t_pyramid.scn"
-//    case tPrism = "art.scnassets/learn/t_prism.scn"
-    
 }

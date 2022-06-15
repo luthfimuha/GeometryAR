@@ -9,7 +9,6 @@ import Foundation
 import ARKit
 
 struct ARModel {
-    
     let marker: String
     let scene: String
     
@@ -17,5 +16,4 @@ struct ARModel {
         self.marker = marker
         self.scene = scene
     }
-    
 }
